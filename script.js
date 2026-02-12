@@ -75,8 +75,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // ----- ADMIN CLEAR BUTTON -----
 window.showAdminButton = function() {
-    const password = prompt("admin");
-    if (password === ADMIN_PASSWORD) {
+    const password = prompt("Enter the Admin password:");
+    if (password === Admin) {
         const adminBtn = document.getElementById("adminClearBtn");
         adminBtn.classList.remove("hidden");
         alert("Admin access granted! You can now clear the chat.");
