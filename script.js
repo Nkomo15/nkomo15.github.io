@@ -19,7 +19,7 @@ const database = getDatabase(app);
 const chatRef = ref(database, "traitorsChat");
 
 // ----- PASSWORDS -----
-const SECRET_PASSWORD = "traitor";
+const SECRET_PASSWORD = "Traitor";
 const ADMIN_PASSWORD = "admin"; //Change to your own password
 
 // ----- FUNCTIONS -----
