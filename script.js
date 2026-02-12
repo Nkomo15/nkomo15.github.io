@@ -2,13 +2,14 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebas
 import { getDatabase, ref, push, onChildAdded } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
 
 const firebaseConfig = {
-  apiKey: "PASTE_YOURS",
-  authDomain: "PASTE_YOURS",
-  databaseURL: "PASTE_YOURS",
-  projectId: "PASTE_YOURS",
-  storageBucket: "PASTE_YOURS",
-  messagingSenderId: "PASTE_YOURS",
-  appId: "PASTE_YOURS"
+  apiKey: "AIzaSyCYXVp4gOWcT6HyYf-FcKDNEaQp-50itaY",
+  authDomain: "traitors-party-ee814.firebaseapp.com",
+  databaseURL: "https://traitors-party-ee814-default-rtdb.firebaseio.com",
+  projectId: "traitors-party-ee814",
+  storageBucket: "traitors-party-ee814.firebasestorage.app",
+  messagingSenderId: "54815836027",
+  appId: "1:54815836027:web:1ff662779b86ea3dfd1fde",
+  measurementId: "G-E3CCYRDBSK"
 };
 
 const app = initializeApp(firebaseConfig);
