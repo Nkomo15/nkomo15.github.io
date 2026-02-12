@@ -68,3 +68,23 @@ window.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+import { remove } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";
+
+window.clearChat = function() {
+    if (confirm("Are you sure you want to clear the chat? This cannot be undone.")) {
+        remove(chatRef)
+        .then(() => {
+            // Clear chat box in browser
+            document.getElementById("chatBox").innerHTML = "";
+            alert("Chat cleared!");
+        })
+        .catch((error) => {
+            console.error("Error clearing chat:", error);
+            alert("Failed to clear chat. Check console.");
+        });
+    }
+};
+
+// Attach button listener
+document.getElementById("clearChatBtn").addEventListener("click", clearChat);
