@@ -51,3 +51,10 @@ onChildAdded(chatRef, (data) => {
 
     chatBox.appendChild(newMessage);
 });
+
+// Send message when Enter is pressed
+document.getElementById("message").addEventListener("keypress", function(e) {
+    if (e.key === "Enter") {
+        sendMessage();
+    }
+});
