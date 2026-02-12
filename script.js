@@ -50,4 +50,3 @@ onChildAdded(chatRef, (data) => {
 
     chatBox.appendChild(newMessage);
 });
-
