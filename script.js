@@ -75,7 +75,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 // ----- ADMIN CLEAR BUTTON -----
 window.showAdminButton = function() {
-    const password = prompt("Enter the Admin password:");
+    const password = prompt("admin");
     if (password === ADMIN_PASSWORD) {
         const adminBtn = document.getElementById("adminClearBtn");
         adminBtn.classList.remove("hidden");
