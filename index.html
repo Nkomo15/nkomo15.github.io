@@ -7,12 +7,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Hero Section -->
   <div class="hero">
-    <h1>🗡️ The Traitors Party 🗡️</h1>
+    <h1 id="partyTitle" onclick="showAdminButton()">🗡️ The Traitors Party 🗡️</h1>
     <p>Welcome to the ultimate night of deception</p>
     <button class="enter-btn" onclick="enterSecret()">Enter the Castle</button>
   </div>
 
+  <!-- Chat Section -->
   <div id="chatSection" class="hidden">
     <h2>🔒 Traitors Secret Chat</h2>
     <div id="chatBox"></div>
@@ -20,10 +22,9 @@
       <input type="text" id="username" placeholder="Your Name">
       <input type="text" id="message" placeholder="Type your secret message">
       <button onclick="sendMessage()">Send</button>
-      <!-- Hidden Admin Clear Button -->
-<button id="adminClearBtn" class="hidden">🧹 Clear Chat</button>
-
     </div>
+    <!-- Hidden Admin Clear Button -->
+    <button id="adminClearBtn" class="hidden">🧹 Clear Chat</button>
   </div>
 
   <script type="module" src="script.js"></script>

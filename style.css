@@ -23,6 +23,7 @@ body, html {
   font-size: 4rem;
   margin-bottom: 0.5rem;
   letter-spacing: 2px;
+  cursor: pointer;
 }
 
 .hero p {
@@ -101,8 +102,17 @@ button:hover {
   background-color: #ff4c5a;
 }
 
+#adminClearBtn {
+  background-color: #ffb703;
+  color: #0d0d0d;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#adminClearBtn:hover {
+  background-color: #ffd166;
+}
+
 .hidden {
   display: none;
 }
-
-
