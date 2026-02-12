@@ -20,7 +20,7 @@ const chatRef = ref(database, "traitorsChat");
 
 // ----- PASSWORDS -----
 const SECRET_PASSWORD = "traitor";
-const ADMIN_PASSWORD = "overlord"; // change to your secret admin password
+const ADMIN_PASSWORD = "overlord"; // admin
 
 // ----- FUNCTIONS -----
 window.enterSecret = function() {
