@@ -20,6 +20,9 @@
       <input type="text" id="username" placeholder="Your Name">
       <input type="text" id="message" placeholder="Type your secret message">
       <button onclick="sendMessage()">Send</button>
+      <!-- Hidden Admin Clear Button -->
+<button id="adminClearBtn" class="hidden">🧹 Clear Chat</button>
+
     </div>
   </div>
 
@@ -28,3 +31,5 @@
 </html>
 
 <button id="clearChatBtn">🧹 Clear Chat</button>
+
+<h1 id="chatlock" onclick="showAdminButton()">🔒 Traitors Secret Chat</h2>

@@ -89,3 +89,39 @@ window.clearChat = function() {
 
 // Attach button listener
 document.getElementById("clearChatBtn").addEventListener("click", clearChat);
+
+const ADMIN_PASSWORD = "overlord"; // admin
+
+window.showAdminButton = function() {
+    const password = prompt("Enter the Admin password:");
+
+    if (password === ADMIN_PASSWORD) {
+        const adminBtn = document.getElementById("adminClearBtn");
+        adminBtn.classList.remove("hidden");
+        alert("Admin access granted! You can now clear the chat.");
+    } else {
+        alert("Access denied. You are not the mastermind.");
+    }
+};
+
+window.adminClearChat = function() {
+    if (confirm("Are you sure you want to clear the chat? This cannot be undone.")) {
+        remove(chatRef)
+        .then(() => {
+            document.getElementById("chatBox").innerHTML = "";
+            alert("Chat cleared!");
+        })
+        .catch((error) => {
+            console.error("Error clearing chat:", error);
+            alert("Failed to clear chat. Check console.");
+        });
+    }
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+    const adminBtn = document.getElementById("adminClearBtn");
+    if (adminBtn) {
+        adminBtn.addEventListener("click", adminClearChat);
+    }
+});
+
