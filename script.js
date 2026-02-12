@@ -6,7 +6,7 @@ import { getDatabase, ref, push, onChildAdded, remove } from "https://www.gstati
 const firebaseConfig = {
   apiKey: "AIzaSyCYXVp4gOWcT6HyYf-FcKDNEaQp-50itaY",
   authDomain: "traitors-party-ee814.firebaseapp.com",
-  databaseURL: "https://traitors-party-ee814-default-rtdb.firebaseio.com",
+  databaseURL: "https://https://traitors-party-ee814-default-rtdb.firebaseio.com/",
   projectId: "traitors-party-ee814",
   storageBucket: "traitors-party-ee814.firebasestorage.app",
   messagingSenderId: "54815836027",
