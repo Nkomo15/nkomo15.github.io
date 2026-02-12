@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: crimson;
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3em;
+    margin-top: 50px;
+}
+
+button {
+    background-color: crimson;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#chatSection {
+    margin-top: 30px;
+}
+
+#chatBox {
+    width: 60%;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid crimson;
+    overflow-y: scroll;
+    padding: 10px;
+    background-color: #111;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
