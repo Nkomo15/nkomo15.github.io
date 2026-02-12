@@ -18,9 +18,9 @@ const chatRef = ref(database, "traitorsChat");
 
 const SECRET_PASSWORD = "traitor";
 
+// -------------------- Existing functions --------------------
 window.enterSecret = function() {
     const password = prompt("Enter the Traitors password:");
-
     if (password === SECRET_PASSWORD) {
         document.getElementById("chatSection").classList.remove("hidden");
     } else {
@@ -42,6 +42,7 @@ window.sendMessage = function() {
     document.getElementById("message").value = "";
 };
 
+// Chat message listener
 onChildAdded(chatRef, (data) => {
     const chatBox = document.getElementById("chatBox");
     const msg = data.val();
@@ -50,23 +51,19 @@ onChildAdded(chatRef, (data) => {
     newMessage.innerHTML = "<strong>" + msg.user + ":</strong> " + msg.text;
 
     chatBox.appendChild(newMessage);
+
+    // Auto-scroll to newest message
+    chatBox.scrollTop = chatBox.scrollHeight;
 });
 
-// Send message when Enter is pressed
-document.getElementById("message").addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
-        sendMessage();
-    }
-});
-
+// -------------------- Add Enter-to-Send HERE --------------------
 window.addEventListener("DOMContentLoaded", () => {
     const messageInput = document.getElementById("message");
     if (messageInput) {
         messageInput.addEventListener("keydown", (e) => {
-            // Only send if Enter is pressed without Shift
             if (e.key === "Enter" && !e.shiftKey) {
-                e.preventDefault(); // Prevent newline
-                sendMessage();       // Call your existing send function
+                e.preventDefault(); // Prevent adding a newline
+                sendMessage();       // Send message
             }
         });
     }
