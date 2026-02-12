@@ -58,3 +58,16 @@ document.getElementById("message").addEventListener("keypress", function(e) {
         sendMessage();
     }
 });
+
+window.addEventListener("DOMContentLoaded", () => {
+    const messageInput = document.getElementById("message");
+    if (messageInput) {
+        messageInput.addEventListener("keydown", (e) => {
+            // Only send if Enter is pressed without Shift
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault(); // Prevent newline
+                sendMessage();       // Call your existing send function
+            }
+        });
+    }
+});
