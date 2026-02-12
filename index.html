@@ -1,25 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>The Traitors Party</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>The Traitors Party</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+  <div class="hero">
     <h1>🗡️ The Traitors Party 🗡️</h1>
-    <p>Welcome to the ultimate night of deception.</p>
+    <p>Welcome to the ultimate night of deception</p>
+    <button class="enter-btn" onclick="enterSecret()">Enter the Castle</button>
+  </div>
 
-    <button onclick="enterSecret()">Enter the Castle</button>
-
-    <div id="chatSection" class="hidden">
-        <h2>🔒 Traitors Secret Chat</h2>
-        <div id="chatBox"></div>
-
-        <input type="text" id="username" placeholder="Your Name">
-        <input type="text" id="message" placeholder="Type your secret message">
-        <button onclick="sendMessage()">Send</button>
+  <div id="chatSection" class="hidden">
+    <h2>🔒 Traitors Secret Chat</h2>
+    <div id="chatBox"></div>
+    <div class="chat-inputs">
+      <input type="text" id="username" placeholder="Your Name">
+      <input type="text" id="message" placeholder="Type your secret message">
+      <button onclick="sendMessage()">Send</button>
     </div>
+  </div>
 
-<script type="module" src="script.js"></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
+

@@ -1,43 +1,106 @@
-body {
-    background-color: black;
-    color: crimson;
-    font-family: Georgia, serif;
-    text-align: center;
+/* Fonts & Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0d0d0d;
+  color: #f5f5f5;
 }
 
-h1 {
-    font-size: 3em;
-    margin-top: 50px;
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, #0d0d0d 0%, #1a1a1a 100%);
 }
 
-button {
-    background-color: crimson;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+.hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
 }
 
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #ffb703;
+}
+
+/* Button Styling */
+.enter-btn {
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  background-color: #e63946;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.enter-btn:hover {
+  transform: scale(1.1);
+  background-color: #ff4c5a;
+}
+
+/* Chat Section */
 #chatSection {
-    margin-top: 30px;
+  margin: 50px auto;
+  width: 80%;
+  max-width: 700px;
+  backdrop-filter: blur(10px);
+  background: rgba(25, 25, 25, 0.7);
+  padding: 20px;
+  border-radius: 15px;
 }
 
 #chatBox {
-    width: 60%;
-    height: 200px;
-    margin: 20px auto;
-    border: 2px solid crimson;
-    overflow-y: scroll;
-    padding: 10px;
-    background-color: #111;
+  height: 300px;
+  overflow-y: auto;
+  border: 2px solid #e63946;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  background-color: rgba(0,0,0,0.5);
 }
 
-.hidden {
-    display: none;
+#chatBox p {
+  margin: 5px 0;
+}
+
+.chat-inputs {
+  display: flex;
+  gap: 10px;
 }
 
 input {
-    padding: 8px;
-    margin: 5px;
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #e63946;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #ff4c5a;
+}
+
+.hidden {
+  display: none;
 }
