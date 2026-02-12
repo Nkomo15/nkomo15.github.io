@@ -4,13 +4,14 @@ import { getDatabase, ref, push, onChildAdded, remove } from "https://www.gstati
 // ----- FIREBASE CONFIG -----
 // Replace these with your Firebase project details
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-  authDomain: "YOUR_AUTH_DOMAIN",
-  databaseURL: "YOUR_DATABASE_URL",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_STORAGE_BUCKET",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCYXVp4gOWcT6HyYf-FcKDNEaQp-50itaY",
+  authDomain: "traitors-party-ee814.firebaseapp.com",
+  databaseURL: "https://traitors-party-ee814-default-rtdb.firebaseio.com",
+  projectId: "traitors-party-ee814",
+  storageBucket: "traitors-party-ee814.firebasestorage.app",
+  messagingSenderId: "54815836027",
+  appId: "1:54815836027:web:1ff662779b86ea3dfd1fde",
+  measurementId: "G-E3CCYRDBSK"
 };
 
 const app = initializeApp(firebaseConfig);
