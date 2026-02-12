@@ -105,17 +105,4 @@ button:hover {
   display: none;
 }
 
-#clearChatBtn {
-  background-color: #ffb703;
-  color: #0d0d0d;
-  font-weight: bold;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  margin-bottom: 15px;
-}
 
-#clearChatBtn:hover {
-  background-color: #ffd166;
-}
