@@ -20,7 +20,7 @@ const chatRef = ref(database, "traitorsChat");
 
 // ----- PASSWORDS -----
 const SECRET_PASSWORD = "traitor";
-const ADMIN_PASSWORD = "overlord"; // admin
+const ADMIN_PASSWORD = "admin"; //Change to your own password
 
 // ----- FUNCTIONS -----
 window.enterSecret = function() {
@@ -76,7 +76,7 @@ window.addEventListener("DOMContentLoaded", () => {
 // ----- ADMIN CLEAR BUTTON -----
 window.showAdminButton = function() {
     const password = prompt("Enter the Admin password:");
-    if (password === Admin) {
+    if (password === ADMIN_PASSWORD) {
         const adminBtn = document.getElementById("adminClearBtn");
         adminBtn.classList.remove("hidden");
         alert("Admin access granted! You can now clear the chat.");
